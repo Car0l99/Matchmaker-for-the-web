@@ -56,3 +56,20 @@
 		<option value="1">Very Strongly Disagree</option>
      </select>
      <br /><br />
+
+	<br /><br /><br />
+	<button onclick="calculateCompatibility()">Calculate Compatibility</button>
+	<p id="compatibility"></p>
+
+<script>
+console.log("Starting Matchmaker Lite...");
+
+function calculateCompatibility() {
+	console.log("calculateCompatibility()");
+
+	document.getElementById("compatibility").innerHTML = "Your compatibility is...";
+}
+
+</script>
+</body>
+</html>
