@@ -107,8 +107,8 @@ const DESIRED_RESPONSE = [
 	console.log(question5Response);
 
 
-	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
-	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[4]);
+	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[Very Strongly Agree]);
+	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[Agree]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[3]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
