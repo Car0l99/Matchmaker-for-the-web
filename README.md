@@ -68,12 +68,14 @@ function calculateCompatibility() {
 	console.log("calculateCompatibility()");
 
 	const DESIRED_RESPONSE = [
-		5, /* strongly agree */
-		2, /* disagree */
-		1, /* strongly disagree */
+		5, /* 5 */
+		4,/* 4 */
+		2, /* 2 */
+		3, /* 3 */
+		1, /* 1 */
 	]
 
-	const MAX_SCORE = 15;
+	const MAX_SCORE = 25;
 
 	// Get the current values of the dropdown controls.
 	let question1Response = document.getElementById("q1").selectedOptions[0].value;
@@ -99,9 +101,9 @@ function calculateCompatibility() {
 	console.log(question2Response);
 
 	// Todo: Calculate compatibility scores.
-	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
-	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[4]);
-	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
+	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[3]);
+	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[2]);
+	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[3]);
 
 	console.log("c1="+question1Compatibility);
 	console.log("c2="+question2Compatibility);
