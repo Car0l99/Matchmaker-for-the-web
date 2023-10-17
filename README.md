@@ -58,18 +58,16 @@
      <br /><br />
 
 	<br /><br /><br />
-	<button onclick="calculateCompatibility()">Calculate Compatibility</button>
-	<p id="compatibility"></p>
+	<button onclick="submit()">Submit</button>
+	<p id="submit"></p>
 
 <script>
 console.log("Starting Matchmaker Lite...");
 
 function calculateCompatibility() {
-	console.log("calculateCompatibility()");
+	console.log("submit()");
 
-	document.getElementById("compatibility").innerHTML = "Your compatibility is...";
+	document.getElementById("submit").innerHTML = "Your compatibility is...";
 }
 
 </script>
-</body>
-</html>
