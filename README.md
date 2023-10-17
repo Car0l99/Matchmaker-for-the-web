@@ -1,9 +1,7 @@
 <html>
 <body style="background-color:powderblue;">
-
-  <head>
      
-        <title style="font-size:300%;"><h1 style="font-family:verdana;"><title style="text-align:center;"><p id="text" onclick="func()">
+        <h1 style="font-size:300%;"><h1 style="font-family:verdana;"><h1 style="text-align:center;"><p id="text" onclick="func()">
     <b>&#128151;Matchmaker for the Web&#128151;</b>
 
   </head>
