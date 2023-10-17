@@ -9,7 +9,6 @@
 
      <label>Technoblade is the greatest streamer of all time.</label><br />
 	<select id="q1">
-          <option value="5">Very Strongly Agree</option>
           	<option value="5">5</option>
 		<option value="4">4</option>
 		<option value="3">3</option>
@@ -65,12 +64,13 @@
 <script>
 console.log("Starting Matchmaker Lite...");
 
-const DESIRED_RESPONSE = [
+function calculateCompatibility() {
+	console.log("calculateCompatibility()");
+
+	const DESIRED_RESPONSE = [
 		5, /* strongly agree */
-		4, /* agree */
-		3, /* neutral */
-		5, /* agree */
-		5, /* agree */
+		2, /* disagree */
+		1, /* strongly disagree */
 	]
 
 	const MAX_SCORE = 15;
@@ -82,6 +82,7 @@ const DESIRED_RESPONSE = [
 	let question4Response = document.getElementById("q4").selectedOptions[0].value;
 	let question5Response = document.getElementById("q5").selectedOptions[0].value;
 
+	// Optionally log the values associated with question 1 through 3 to the console. 
 	console.log("Question 1 Answers:")
 	console.log(document.getElementById("q1").selectedOptions[0].text);
 	console.log(document.getElementById("q1").selectedOptions[0].value);
@@ -95,43 +96,26 @@ const DESIRED_RESPONSE = [
 	console.log("Question 3 Answers:");
 	console.log(document.getElementById("q3").selectedOptions[0].text);
 	console.log(document.getElementById("q3").selectedOptions[0].value);
-	console.log(question3Response);
+	console.log(question2Response);
 
-	console.log("Question 4 Answers:");
-	console.log(document.getElementById("q4").selectedOptions[0].text);
-	console.log(document.getElementById("q4").selectedOptions[0].value);
-	console.log(question4Response);
-
-	console.log("Question 5 Answers:");
-	console.log(document.getElementById("q5").selectedOptions[0].text);
-	console.log(document.getElementById("q5").selectedOptions[0].value);
-	console.log(question5Response);
-
-
+	// Todo: Calculate compatibility scores.
 	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
 	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[4]);
-	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[3]);
-	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
 
 	console.log("c1="+question1Compatibility);
 	console.log("c2="+question2Compatibility);
 	console.log("c3="+question3Compatibility);
-	console.log("c4="+question4Compatibility);
-	console.log("c5="+question5Compatibility);
 
 	// Calculate total compatibility. 
-	let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
+	let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility;
 
 	// Convert totalCompatibility to a percentage.
 	totalCompatibility *= 100 / MAX_SCORE;
 	totalCompatibility = Math.round(totalCompatibility);
 	console.log("tc="+ totalCompatibility);
-	
-function submit() {
-	console.log("submit()");
 
-	document.getElementById("submit").innerHTML = "Your compatibility is " + totalCompatibility;
+	document.getElementById("submit").innerHTML = "Your compatibility is: " + totalCompatibility;
 }
 
 </script>
