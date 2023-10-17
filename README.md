@@ -1,4 +1,4 @@
-<html>
+1<html>
 <body style="background-color:powderblue;">
      
         <h1 style="font-size:300%;"><h1 style="font-family:verdana;"><h1 style="text-align:center;"><p id="text" onclick="func()">
@@ -64,7 +64,7 @@
 <script>
 console.log("Starting Matchmaker Lite...");
 
-function calculateCompatibility() {
+function submit() {
 	console.log("submit()");
 
 	document.getElementById("submit").innerHTML = "Your compatibility is...";
