@@ -10,50 +10,51 @@
      <label>Technoblade is the greatest streamer of all time.</label><br />
 	<select id="q1">
           <option value="5">Very Strongly Agree</option>
-		<option value="4">Agree</option>
-		<option value="3">Neutral</option>
-		<option value="2">Disagree</option>
-		<option value="1">Very Strongly Disagree</option>
+          	<option value="5">5</option>
+		<option value="4">4</option>
+		<option value="3">3</option>
+		<option value="2">2</option>
+		<option value="1">1</option>
      </select>
      <br /><br />
 
      <label>Lovejoy makes pretty good music.</label><br />
      	<select id="q2">
-          <option value="5">Very Strongly Agree</option>
-		<option value="4">Agree</option>
-		<option value="3">Neutral</option>
-		<option value="2">Disagree</option>
-		<option value="1">Very Strongly Disagree</option>
+          	<option value="5">5</option>
+		<option value="4">4</option>
+		<option value="3">3</option>
+		<option value="2">2</option>
+		<option value="1">1</option>
      </select>
      <br /><br />
 
      <label>Cats are better than dogs.</label><br />
      	<select id="q3">
-         	 <option value="5">Very Strongly Agree</option>
-		<option value="4">Agree</option>
-		<option value="3">Neutral</option>
-		<option value="2">Disagree</option>
-		<option value="1">Very Strongly Disagree</option>
+                <option value="5">5</option>
+		<option value="4">4</option>
+		<option value="3">3</option>
+		<option value="2">2</option>
+		<option value="1">1</option>
      </select>
      <br /><br />
 
 <label>Reading is a fun thing to do.</label><br />
      	<select id="q4">
-          	<option value="5">Very Strongly Agree</option>
-		<option value="4">Agree</option>
-		<option value="3">Neutral</option>
-		<option value="2">Disagree</option>
-		<option value="1">Very Strongly Disagree</option>
+          	<option value="5">5</option>
+		<option value="4">4</option>
+		<option value="3">3</option>
+		<option value="2">2</option>
+		<option value="1">1</option>
      </select>
      <br /><br />
 
      <label>I enjoy playing Minecraft.</label><br />
      	<select id="q5">
-          <option value="5">Very Strongly Agree</option>
-		<option value="4">Agree</option>
-		<option value="3">Neutral</option>
-		<option value="2">Disagree</option>
-		<option value="1">Very Strongly Disagree</option>
+                <option value="5">5</option>
+		<option value="4">4</option>
+		<option value="3">3</option>
+		<option value="2">2</option>
+		<option value="1">1</option>
      </select>
      <br /><br />
 
@@ -107,8 +108,8 @@ const DESIRED_RESPONSE = [
 	console.log(question5Response);
 
 
-	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[Very Strongly Agree]);
-	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[Agree]);
+	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
+	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[4]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[3]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[5]);
