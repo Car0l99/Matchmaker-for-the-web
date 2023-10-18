@@ -98,7 +98,7 @@ function submit() {
 
 	// Todo: Calculate compatibility scores.
 	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
-	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[1]);
+	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[0]);
 	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[2]);
 
 	console.log("c1="+question1Compatibility);
