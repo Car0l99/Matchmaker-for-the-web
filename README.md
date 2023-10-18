@@ -115,8 +115,8 @@ function submit() {
 	console.log("c1="+question1Compatibility);
 	console.log("c2="+question2Compatibility);
 	console.log("c3="+question3Compatibility);
-	console.log("c3="+question4Compatibility);
-	console.log("c3="+question5Compatibility);
+	console.log("c4="+question4Compatibility);
+	console.log("c5="+question5Compatibility);
 
 	let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
 
@@ -128,6 +128,3 @@ function submit() {
 }
 
 </script>
-
-</body>
-</html>
