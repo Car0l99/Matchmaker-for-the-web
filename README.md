@@ -73,7 +73,7 @@ function submit() {
 		1, /* 1 */
 	]
 
-	const MAX_SCORE = 15;
+	const MAX_SCORE = 25;
 
 	let question1Response = document.getElementById("q1").selectedOptions[0].value;
 	let question2Response = document.getElementById("q2").selectedOptions[0].value;
