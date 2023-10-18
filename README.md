@@ -124,7 +124,7 @@ function submit() {
 	totalCompatibility = Math.round(totalCompatibility);
 	console.log("tc="+ totalCompatibility);
 
-	document.getElementById("submit").innerHTML = "Your compatibility is: " + totalCompatibility;
+	document.getElementById("submit").innerHTML = "Your score is: " + totalCompatibility;
 }
 
 </script>
