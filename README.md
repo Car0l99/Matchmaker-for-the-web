@@ -64,7 +64,7 @@
 <script>
 console.log("Starting Matchmaker Lite...");
 
-function calculateCompatibility() {
+function submit() {
 	console.log("submit()");
 
 	const DESIRED_RESPONSE = [
@@ -75,14 +75,12 @@ function calculateCompatibility() {
 
 	const MAX_SCORE = 15;
 
-	// Get the current values of the dropdown controls.
 	let question1Response = document.getElementById("q1").selectedOptions[0].value;
 	let question2Response = document.getElementById("q2").selectedOptions[0].value;
 	let question3Response = document.getElementById("q3").selectedOptions[0].value;
 	let question4Response = document.getElementById("q4").selectedOptions[0].value;
 	let question5Response = document.getElementById("q5").selectedOptions[0].value;
 
-	// Optionally log the values associated with question 1 through 3 to the console. 
 	console.log("Question 1 Answers:")
 	console.log(document.getElementById("q1").selectedOptions[0].text);
 	console.log(document.getElementById("q1").selectedOptions[0].value);
@@ -96,7 +94,7 @@ function calculateCompatibility() {
 	console.log("Question 3 Answers:");
 	console.log(document.getElementById("q3").selectedOptions[0].text);
 	console.log(document.getElementById("q3").selectedOptions[0].value);
-	console.log(question2Response);
+	console.log(question3Response);
 
 	// Todo: Calculate compatibility scores.
 	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
