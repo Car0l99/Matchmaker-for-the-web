@@ -62,25 +62,27 @@
 	<p id="submit"></p>
 
 <script>
-console.log("Starting Matchmaker For the Web...");
+console.log("Starting Matchmaker Lite...");
 
 function calculateCompatibility() {
 	console.log("submit()");
 
 	const DESIRED_RESPONSE = [
-		5, /* 5 */
-		4,/* 4 */
-		3, /* 3 */
+		5, /* strongly agree */
+		2, /* disagree */
+		1, /* strongly disagree */
 	]
 
 	const MAX_SCORE = 15;
 
+	// Get the current values of the dropdown controls.
 	let question1Response = document.getElementById("q1").selectedOptions[0].value;
 	let question2Response = document.getElementById("q2").selectedOptions[0].value;
 	let question3Response = document.getElementById("q3").selectedOptions[0].value;
 	let question4Response = document.getElementById("q4").selectedOptions[0].value;
 	let question5Response = document.getElementById("q5").selectedOptions[0].value;
 
+	// Optionally log the values associated with question 1 through 3 to the console. 
 	console.log("Question 1 Answers:")
 	console.log(document.getElementById("q1").selectedOptions[0].text);
 	console.log(document.getElementById("q1").selectedOptions[0].value);
@@ -94,37 +96,19 @@ function calculateCompatibility() {
 	console.log("Question 3 Answers:");
 	console.log(document.getElementById("q3").selectedOptions[0].text);
 	console.log(document.getElementById("q3").selectedOptions[0].value);
-	console.log(question3Response);
-
-	console.log("Question 4 Answers:");
-	console.log(document.getElementById("q4").selectedOptions[0].text);
-	console.log(document.getElementById("q4").selectedOptions[0].value);
-	console.log(question4Response);
-
-	console.log("Question 5 Answers:");
-	console.log(document.getElementById("q5").selectedOptions[0].text);
-	console.log(document.getElementById("q5").selectedOptions[0].value);
-	console.log(question5Response);
-
-
+	console.log(question2Response);
 
 	// Todo: Calculate compatibility scores.
-	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
-	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[5]);
-	let question3Compatibility = 4 - Math.abs(question3Response - DESIRED_RESPONSE[4]);
-	let question3Compatibility = 5 - Math.abs(question4Response - DESIRED_RESPONSE[5]);
-	let question3Compatibility = 5 - Math.abs(question5Response - DESIRED_RESPONSE[5]);
-
+	let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
+	let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[1]);
+	let question3Compatibility = 5 - Math.abs(question3Response - DESIRED_RESPONSE[2]);
 
 	console.log("c1="+question1Compatibility);
 	console.log("c2="+question2Compatibility);
 	console.log("c3="+question3Compatibility);
-	console.log("c4="+question4Compatibility);
-	console.log("c5="+question5Compatibility);
-
 
 	// Calculate total compatibility. 
-	let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility +question5Compatibility;
+	let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility;
 
 	// Convert totalCompatibility to a percentage.
 	totalCompatibility *= 100 / MAX_SCORE;
