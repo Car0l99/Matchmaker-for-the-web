@@ -68,9 +68,9 @@ function calculateCompatibility() {
 	console.log("submit()");
 
 	const DESIRED_RESPONSE = [
-		5, /* strongly agree */
-		2, /* disagree */
-		1, /* strongly disagree */
+		5, /* 5 */
+		2, /* 2 */
+		1, /* 1 */
 	]
 
 	const MAX_SCORE = 15;
