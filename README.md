@@ -69,6 +69,8 @@ function submit() {
 
 	const DESIRED_RESPONSE = [
 		5, /* Strongly Agree */
+		4, /* Agree */
+		3, /* Neutral */
 		2, /* Disagree */
 		1, /* Strongly Disagree */
 	]
