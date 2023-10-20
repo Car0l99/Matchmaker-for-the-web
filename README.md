@@ -128,16 +128,10 @@ function submit() {
 
 	document.getElementById("submit").innerHTML = "Your score is: " + totalCompatibility;
 	console.log("tc="+totalCompatibility);
-	 if (totalCompatilibity >= 76) {
+	 if (totalCompatilibity >= 76) 
+	 {
+		 document.getElementById("submit").innerHTML = "We can be best friends.";
 		 console.log("We can be best friends.").innerHTML = "We can be best friends.";
-		 document.getElementById("message").innerHTML = "We can be best friends.";
-	 }	else if (totalCompatibility >= 50) {
-		 console.log("we can be friends.);
-		document.getElementById("message").innerHTML = "We can be best friends.";
-	 }	else {
-		console.log("See you around.")
-		 document.getElementById("message").innerHTML = "We can be best friends.";
-
 	 }
 
 }
