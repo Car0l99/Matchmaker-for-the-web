@@ -126,10 +126,11 @@ function submit() {
 	totalCompatibility = Math.round(totalCompatibility);
 	console.log("tc="+ totalCompatibility);
 
-	document.getElementById("submit").innerHTML = "Your score is: " + totalCompatibility;
+	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
 	console.log("tc="+totalCompatibility);
-	 if (totalCompatilibity >= 80)
-	document.getElementById('submit').innerHTML = 'We can be best friends.';
+	 if (totalCompatilibity >= 76) {
+	console.log("We can be best friends!");
+	document.getElementById('submit').innerHTML = "We can be best friends!";
 }
 	
 </script>
