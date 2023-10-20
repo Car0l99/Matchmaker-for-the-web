@@ -3,7 +3,7 @@
      
         <h1 style="font-size:300%;"><h1 style="font-family:verdana;"><h1 style="text-align:center;"><p id="text" onclick="func()">
     <b>&#128151;Matchmaker for the Web&#128151;</b>
-    <p style="font-size:150%;">Cupid's Favorite Game</p>
+    <p style="font-size:300%;">Cupid's Favorite Game</p>
 
 <h2 style="font-size:100%;"><i>It might not be month of love, but love will always be around us whether it's romantic or platonic. This quiz determines what you and I are meant to be. Friends? Foes? Lovers? Don't worry it's not too long, just five simple questions. Simply answer how you about the statement provided, whether you strongly agree with it or are neutral about it.</i></h2>
 
@@ -128,9 +128,8 @@ function submit() {
 
 	document.getElementById("submit").innerHTML = "Your score is: " + totalCompatibility;
 	console.log("tc="+totalCompatibility);
-	 if (totalCompatilibity >= 76) 
+	 if (totalCompatilibity >= 15) 
 	 {
-		 document.getElementById("submit").innerHTML = "We can be best friends.";
 		 console.log("We can be best friends.").innerHTML = "We can be best friends.";
 	 }
 
