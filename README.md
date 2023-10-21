@@ -127,8 +127,5 @@ function submit() {
 	console.log("tc="+ totalCompatibility);
 
 	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
-	if  (totalCompatibility =< 80 {
-		document.getElementById("submit()").innerHTML = "Good Day!";
-	}
 	
 </script>
