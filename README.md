@@ -128,4 +128,4 @@ function submit() {
 
 	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
 	
-</script>
+	</script>
