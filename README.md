@@ -126,6 +126,13 @@ function submit() {
 	totalCompatibility = Math.round(totalCompatibility);
 	console.log("tc="+ totalCompatibility);
 
-	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
+	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility + greeting;
+	let greeting
+	if (totalCompatibility < 80) {
+		greeting = "Good Day";
+	}
+		else {
+			greeting = "Bad Day";
+		}
 	
 	</script>
