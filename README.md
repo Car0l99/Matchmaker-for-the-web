@@ -127,7 +127,8 @@ function submit() {
 	console.log("tc="+totalCompatibility);
 
 	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
-	console.log("tc="+totalCompatibility)
+	
+	console.log("tc="+totalCompatibility);
 	 if (totalCompatibility >= 76) {
 		 console.log("We can be best friends!);
 		document.getElementById("submit()").innerHTML = "We can be best friends!";
