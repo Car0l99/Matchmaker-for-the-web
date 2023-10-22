@@ -131,6 +131,7 @@ function submit() {
 	 if (totalCompatibility >= 76) {
 		 console.log("We can be best friends!);
 		document.getElementById("submit()").innerHTML = "We can be best friends!";
+	 }
 } 
 
 	</script>
