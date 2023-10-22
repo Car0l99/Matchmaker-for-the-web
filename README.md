@@ -124,8 +124,19 @@ function submit() {
 
 	totalCompatibility *= 100 / MAX_SCORE;
 	totalCompatibility = Math.round(totalCompatibility);
-	console.log("tc="+ totalCompatibility);
+	console.log("tc=" + totalCompatibility);
 
 	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility + greeting;
+	console.log("tc=" + totalCompatibility);
+		if (totalCompatibility >= 76) {
+			console.log("We can be best friends!");
+			document.getElementById("message").innerHTML = "We can be best friends!";
+		}	else if (totalCompatibility >= 50);
+			console.log("We can be best friends!");
+			document.getElementById("message").innerHTML = "We can be best friends!";
+			} else {
+			console.log("See you around.");
+			document.getElementById("message").innerHTML = "See you around";
+			}
 
 	</script>
