@@ -127,9 +127,6 @@ function submit() {
 	console.log("tc="+totalCompatibility);
 
 	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
-	
-	
-
 
 } 
 
