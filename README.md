@@ -120,14 +120,14 @@ function submit() {
 	console.log("c4="+question4Compatibility);
 	console.log("c5="+question5Compatibility);
 
-	let totalCompatibility = question1Compatibility+question2Compatibility+question3Compatibility+question4Compatibility+question5Compatibility;
+	let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
 
 	totalCompatibility *= 100 / MAX_SCORE;
 	totalCompatibility = Math.round(totalCompatibility);
-	console.log("tc="+totalCompatibility);
+	console.log("tc="+ totalCompatibility);
 
-	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility + greeting;
-	console.log("tc="+totalCompatibility);
+	document.getElementById("submit()").innerHTML = "Your score is: " + totalCompatibility;
+	console.log("tc="+ totalCompatibility);
 		if (totalCompatibility >= 76) {
 			console.log("We can be best friends!");
 			document.getElementById("submit()").innerHTML = "We can be best friends!";
